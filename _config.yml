@@ -2,8 +2,8 @@ title               : "Martin Neubrandt"
 author              : "Martin Neubrandt"
 name                : &name "Martin Neubrandt"
 description         : >
-"PhD in Economics @ Corvinus"
-"Junior research fellow @ HUN-REN KRTK KTI"
+PhD in Economics @ Corvinus
+Junior research fellow @ HUN-REN KRTK KTI
 url                 : "https://martinneubrandt.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl             : "" # the subpath of your site, e.g. /blog
 repository          : "martinneubrandt.github.io"
