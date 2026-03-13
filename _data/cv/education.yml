@@ -1,8 +1,12 @@
-- title: 'PhD - Corvinus University of Budapest'
-  description: '(Ongoing) Economics'
+- degree: 'PhD in Economics'
+  institution: 'Corvinus University of Budapest'
+  years: 'Ongoing'
 
-- title: 'MSc - Corvinus University of Budapest'
-  description: '2023 Economic analysis (with distinction)'
+- degree: 'MSc in Economic Analysis'
+  institution: 'Corvinus University of Budapest'
+  years: '2021 – 2023'
+  note: 'with distinction'
 
-- title: 'BSc - Eötvös Lóránd University Budapest'
-  description: '2020 Applied economics'
+- degree: 'BSc in Applied Economics'
+  institution: 'Eötvös Lóránd University Budapest'
+  years: '2017 – 2020'

@@ -4,34 +4,59 @@ layout: default
 
 {{ content }}
 
-<div class="row g-5 mb-5">
-  <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">CV</h3>
-    <div class="row g-5 mb-5">
-      <div class="col-md-2">
-        <h4>Education</h4>
-      </div>
-      <div class="col-md-10">
-        {% for section in site.data.cv.education %}
-          <p class="fw-bold">{{ section.title }}</p>
-          <p>{{ section.description }}</p>
-        {% endfor %}
-      </div>
+<div class="mb-5">
+  <h3 class="fw-bold border-bottom pb-3 mb-5">CV</h3>
+
+  <div class="row mb-5">
+    <div class="col-md-2">
+      <h5 class="fw-bold">Education</h5>
     </div>
-    <div class="row g-5 mb-5">
-      <div class="col-md-2">
-        <h4>Academic Experience</h4>
+    <div class="col-md-10">
+      {% for entry in site.data.cv.education %}
+      <div class="row mb-3">
+        <div class="col-md-3 text-muted small pt-1">{{ entry.years }}</div>
+        <div class="col-md-9">
+          <p class="fw-semibold mb-0">{{ entry.degree }}</p>
+          <p class="mb-0">{{ entry.institution }}</p>
+          {% if entry.note %}<p class="text-muted small mb-0">{{ entry.note }}</p>{% endif %}
+        </div>
       </div>
-      <div class="col-md-10">
-        {% for section in site.data.cv.academic-experience %}
-          <p class="fw-bold">{{ section.title }}</p>
-          <p>{{ section.description }}</p>
-        {% endfor %}
-      </div>
+      {% endfor %}
     </div>
   </div>
+
+  <div class="row mb-5">
+    <div class="col-md-2">
+      <h5 class="fw-bold">Academic Experience</h5>
+    </div>
+    <div class="col-md-10">
+      {% for entry in site.data.cv.academic-experience %}
+      <div class="row mb-3">
+        <div class="col-md-3 text-muted small pt-1">{{ entry.years }}</div>
+        <div class="col-md-9">
+          <p class="fw-semibold mb-0">{{ entry.title }}</p>
+          <p class="mb-0">{{ entry.institution }}</p>
+          {% if entry.description %}<p class="text-muted small mb-0">{{ entry.description }}</p>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-2">
+      <h5 class="fw-bold">Working Papers</h5>
+    </div>
+    <div class="col-md-10">
+      {% for paper in site.data.cv.papers %}
+      <div class="mb-3">
+        <p class="fw-semibold mb-0"><a href="{{ paper.url }}">{{ paper.title }}</a></p>
+        {% if paper.status %}<p class="text-muted small mb-0">{{ paper.status }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
 </div>
 
-<p><b><a href="https://www.dropbox.com/scl/fi/wrgpjx207e7bkcgz6gsiz/cv20251121.pdf?rlkey=xsfyxsds8l624c31sp9pmz96x&st=n4mddzdt&dl=0">
-  Detailed CV
-</a></b></p>
+<p><a href="https://www.dropbox.com/scl/fi/wrgpjx207e7bkcgz6gsiz/cv20251121.pdf?rlkey=xsfyxsds8l624c31sp9pmz96x&st=n4mddzdt&dl=0" class="fw-bold">Download full CV (PDF)</a></p>
