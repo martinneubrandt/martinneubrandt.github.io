@@ -2,6 +2,4 @@ menu:
 - {name: 'research', url: '/research'}
 - {name: 'cv', url: '/cv'}
 
-social:
-- {icon: 'github', link: 'https://github.com/martinneubrandt'}
-- {icon: 'linkedin', link: 'https://www.linkedin.com/in/martinneubrandt'}
+social: []
